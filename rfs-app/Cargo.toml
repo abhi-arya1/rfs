@@ -3,11 +3,5 @@ name = "rfs-app"
 version = "0.1.0"
 edition = "2021"
 
-[workspace]
-members=[
-    "rfs-libs",
-    "rfs-app"
-]
-
 [dependencies]
 cross = "0.2.5"
