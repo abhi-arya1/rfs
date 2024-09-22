@@ -1,0 +1,10 @@
+alias pwded='pushd . > /dev/null 2>&1'
+alias back='popd > /dev/null 2>&1'
+alias appdir='cd ./rfs-app'
+alias gdsdir='cd ./rfs-app/ground_station'
+# alias clidir='cd ./rfs-util'
+
+alias appstart='pwded; appdir;'
+alias appbuild='appstart; cargo build; back;'
+alias apprun='appstart; cargo run; back;'
+alias gdsrun='pwded; gdsdir; python3 app.py; back;'
